@@ -571,6 +571,7 @@ MonoBehaviour:
   - {fileID: 210209799871599627, guid: 2f5c2acb99c23d346b03dbf01434aeff, type: 3}
   - {fileID: 754219288392508252, guid: a3c82758f5ecd2148855103c6091edad, type: 3}
   - {fileID: 1159645492042930699, guid: c99f1146164e4794aabb1611b0a9678f, type: 3}
+  animalIndex: 0
 --- !u!4 &1062596512
 Transform:
   m_ObjectHideFlags: 0

@@ -1,9 +1,13 @@
 using UnityEngine;
 
+
 public class SpawnManager : MonoBehaviour
 {
     // gameobject array for animals
     public GameObject[] animalPrefabs;
+    private float spawnRangeX = 20.0f;
+    private float spawnPositionZ = 20.0f;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,6 +17,13 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            int animalIndex = Random.Range(0, animalPrefabs.Length);
+            Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX,spawnRangeX), 0, spawnPositionZ);
+            Instantiate(animalPrefabs[animalIndex], 
+                spawnPosition,
+                animalPrefabs[animalIndex].transform.rotation);
+        }
     }
 }
