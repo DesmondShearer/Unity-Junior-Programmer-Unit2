@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 628036511778046312}
   - component: {fileID: 6035934098804001078}
   - component: {fileID: 2000727901021687867}
+  - component: {fileID: 6669080063067230852}
   m_Layer: 0
   m_Name: Dog_BullTerrier_01
   m_TagString: Untagged
@@ -196,6 +197,7 @@ Transform:
   - {fileID: 666710333558616413}
   - {fileID: 3822827802718446742}
   - {fileID: 5575068428878450879}
+  - {fileID: 8940773102294670063}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &628036511778046312
@@ -245,6 +247,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95cf04b9104c75042962ce57a288bf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6669080063067230852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754219288392508252}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18, y: 0.56, z: 0.34}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &775893102472652787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,6 +4693,50 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000000014901161, y: -0.011537634, z: 0.10603589}
     m_Extent: {x: 0.08479935, y: 0.12184145, z: 0.14550945}
   m_DirtyAABB: 0
+--- !u!1 &7699357294673830414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8940773102294670063}
+  - component: {fileID: 954464044907029638}
+  m_Layer: 0
+  m_Name: DetectCollisions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8940773102294670063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699357294673830414}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.5980572, y: 0, z: 0.006187185}
+  m_LocalScale: {x: 0.06666667, y: 0.06666667, z: 0.06666667}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2952008408158797389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &954464044907029638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699357294673830414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48332fb94866724b9b8584529e5b51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7712027973892450633
 GameObject:
   m_ObjectHideFlags: 0
